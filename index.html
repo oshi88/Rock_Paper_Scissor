@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    
+  
+<div class="full_body">
+    
+    <div class="header"> <p style="" class="title">ROCK PAPER SCISSOR</p></div>
+    
+<div class="main_box"><div class="inside_box">
+        
+   <div class="Container_outside">   <div class="Container_both_side">
+             <div class="title_user"><p >COMPUTER</p></div>   
+            <div id="c_win_flash" class="computer_side">
+            <img id="computer_selection_img" src="files/paper_left.png"/>
+            </div>
+            <div class="title_user"><p id="computerSlectionCard">...</p></div>
+       </div></div>
+    
+    
+    <!--center-->
+       
+    <div class="Container_vs">    <div id="VS" style="">
+        
+         
+        
+            <div class="message" id="message">
+                <div id="tie_flashh" class="remaining" ><p style="font-size: 20px; flex: 1;margin: auto;padding: 4px;" id="remainingGames">5 Points to win</p></div></div>
+            
+               <div id="resultBox_ID"  class="resultBoxHidden">
+                   <p id="lostID" class="wonMsg_hidden" style="display: none;">Game Lost<br>Try Again</p>
+                   <div class="stars" id="stars_id">
+                       <p id="wonID" class="wonMsg_hidden" style="">Game Won</p> </div>
+                </div> 
+            
+            <div class="score_card" id="score_card_id">         
+            <div class="computer_score"><p id="computer_score_id" style="color: #041C32;">0</p></div>
+                <div id="_vs_" style="visibility: hidden"><p class="vs_">V/S</p></div>       
+            <div class="user_score"><p id="user_score_id" style="color: #041C32;">0</p></div>
+            </div>
+        
+        
+            <div class="message" id="message1">
+                <div id="tie_flash" class="tie_score" ><p style="font-size: 20px;flex: 1;margin: auto;padding: 4px;" id="resultMSG">test</p></div></div>
+                  
+        </div>    </div>
+        
+    
+    
+    <div class="Container_outside">     <div class="Container_both_side">
+            <div class="title_user"><p>YOU</p></div>
+        <div id="u_win_flash" class="user_side"> 
+            <img id="user_selection_img" src="files/paper.png"/>
+            </div>
+        <div class="title_user"><p id="userSlectionCard">...</p></div>
+        </div></div>
+
+    </div></div>
+    
+    <!-- CONTROL PANEL -->
+    
+<div class="control_panel">
+
+   <div class="Btn_container">
+    <button onclick="resetBtn()" style="margin: auto; visibility: hidden;" class="resetBtn" id="resetBtn">PLAY AGAIN</button>
+    
+    
+    <div class="control_box">
+        <button type="button" id="rock_btn" class="bttn" value="rock"><img id="rock" src="files/rock_control.png"/>ROCK</button>
+         <button type="button" id="paper_btn" class="bttn" value="paper"><img id="paper" src="files/paper_control.png"/>PAPER</button>
+        <button type="button" id="scissor_btn" class="bttn" value="scissor"><img id="scissor" src="files/scissor_control.png"/>SCISSOR</button> 
+        
+       </div></div>
+    
+    
+</div>   
+    </div>
+    <script src="./script.js"></script>
+
+    </body>
+</html>
