@@ -12,6 +12,7 @@ body{
     /*background-image: url(files/test_files/background.jpg);
     background-size:cover;*/
     height: 100vh;
+    
 }
 @media (max-width: 1200px) {
   body {
@@ -24,11 +25,6 @@ body{
    
 }
 
-.full_body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 
 
 .title{
@@ -44,13 +40,19 @@ body{
   .title {
     text-align: center;padding-top: 5px;color: white;font-size: 20px;
     background-color: rgba(13,13,13,.1);
-    
     margin-bottom: -15px;
     border-radius: 10px;
     position: relative;
     font-weight: bolder;
   }
 }
+
+.full_body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 
 .main_box{
     display: flex;
@@ -212,6 +214,12 @@ body{
     flex-direction: column;
     
 }
+@media (max-width: 1200px) {
+  .control_panel {
+      width: 400px;
+      margin: auto;
+  }
+}
 
 .Btn_container{
     display: flex;
@@ -223,7 +231,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
+@media (max-width: 1200px) {
+  .Btn_container {
+      width: 100%;
+      
+  }
+}
 .resetBtn{
     background-color: red;
     color: white;
@@ -241,7 +254,7 @@ body{
 .control_box{
     margin: auto;
     flex: 1;
-    width: 500px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;

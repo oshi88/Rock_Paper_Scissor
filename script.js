@@ -5,6 +5,13 @@ var User     = 0;
 var playerSelection;
 var Comment = document.getElementById("resultMSG");
 
+function preloadImage()
+{
+    var img=new Image();
+    img.src="files/test_files/dark_bg.jpg";
+    img.src="files/test_files/yellow_bg.jpg";
+}
+preloadImage();
 
 function getComputerChoice(){
     var number = Math.floor(Math.random()*3);
@@ -197,7 +204,7 @@ function resetBtn(){
      document.getElementById("resultBox_ID").className = "resultBoxHidden";
     document.getElementById("tie_flash").className = "tie_score";
      document.getElementById("wonID").style = "display:none;";
-    document.getElementById("wonID").innerHTML = "Game Won<br>Congrats";
+    document.getElementById("wonID").innerHTML = "Game Won";
     document.getElementById("stars_id").style = "display:none;";
     document.getElementById("lostID").style = "display:none;";
 }
