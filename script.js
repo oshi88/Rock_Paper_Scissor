@@ -199,4 +199,5 @@ function resetBtn(){
      document.getElementById("wonID").style = "display:none;";
     document.getElementById("wonID").innerHTML = "Game Won<br>Congrats";
     document.getElementById("stars_id").style = "display:none;";
+    document.getElementById("lostID").style = "display:none;";
 }
