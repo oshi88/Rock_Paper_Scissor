@@ -106,11 +106,14 @@ function userWonMsg(){
      document.getElementById("score_card_id").style = "display:none;";
      document.getElementById("VS").style = "background-image: url(files/test_files/yellow_bg.jpg);";
      document.getElementById("resultBox_ID").className = "resultBoxVisible";
+    document.getElementById("resultBox_ID").style = "display:flex;";
      document.getElementById("wonID").style = "display:flex;";
     document.getElementById("stars_id").style = "display:flex;";
      document.getElementById("computerSlectionCard").innerHTML = "...";
     document.getElementById("userSlectionCard").innerHTML = "...";
     document.getElementById("resetBtn").style = "visibility: visible;";
+    document.getElementById("resetBtn").style = "background: linear-gradient(90deg, rgba(45,0,154,1) 0%, rgba(155,0,168,1) 100%);";
+    document.getElementById("resetBtn").innerHTML = "PLAY AGAIN";
 }
 function userLostMsg(){
      document.getElementById("message").style = "display:none;";
@@ -118,11 +121,14 @@ function userLostMsg(){
      document.getElementById("score_card_id").style = "display:none;";
      document.getElementById("VS").style = "background-image: url(files/test_files/dark_bg.jpg);";
      document.getElementById("resultBox_ID").className = "resultBoxVisible";
+    document.getElementById("resultBox_ID").style = "display:flex;";
      document.getElementById("lostID").style = "display:flex;";
     document.getElementById("stars_id").style = "display:none;";
      document.getElementById("computerSlectionCard").innerHTML = "...";
     document.getElementById("userSlectionCard").innerHTML = "...";
     document.getElementById("resetBtn").style = "visibility: visible;";
+    document.getElementById("resetBtn").innerHTML = "TRY AGAIN";
+    
 }
 
 function resetClass(){
@@ -204,7 +210,9 @@ function resetBtn(){
      document.getElementById("resultBox_ID").className = "resultBoxHidden";
     document.getElementById("tie_flash").className = "tie_score";
      document.getElementById("wonID").style = "display:none;";
-    document.getElementById("wonID").innerHTML = "Game Won";
+    document.getElementById("wonID").innerHTML = "GAME WON";
     document.getElementById("stars_id").style = "display:none;";
     document.getElementById("lostID").style = "display:none;";
+    document.getElementById("resultBox_ID").style = "display:none;";
+    document.getElementById("resetBtn").style = "visibility: hidden;";
 }

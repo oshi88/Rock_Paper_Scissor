@@ -238,9 +238,11 @@ body{
   }
 }
 .resetBtn{
-    background-color: red;
+    background: red;
     color: white;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px;
     font-size: 20px;
     cursor: pointer;  
@@ -291,6 +293,7 @@ body{
 
 .score_card{
     display: flex;
+
 }
 .score_card>div{
     color: white;
@@ -300,6 +303,7 @@ body{
     margin-bottom: auto;
     width: 100%;
     text-align: center;
+    
 }
 .computer_score{
     background-color: white;
@@ -405,6 +409,7 @@ body{
   background-repeat:no-repeat;
   margin: auto;  
 }
+
 .stars{
     background-image: url(files/test_files/stars_1.png);
     background-size: cover;
